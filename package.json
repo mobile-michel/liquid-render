@@ -1,0 +1,17 @@
+{
+  "name": "liquid-render",
+  "version": "1.1.0",
+  "description": "Sandbox for the render tag of Liquid templates with Eleventy.",
+  "main": "eleventy.config.js",
+  "scripts": {
+    "start": "npx @11ty/eleventy --serve",
+    "build": "eleventy --pathprefix 'liquid-render'",
+    "debug": "DEBUG=* eleventy"
+  },
+  "keywords": ["eleventy", "liquidJS"],
+  "author": "Michel Maillard",
+  "license": "ISC",
+  "devDependencies": {
+    "@11ty/eleventy": "^2.0.1"
+  }
+}

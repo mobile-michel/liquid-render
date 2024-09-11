@@ -1,0 +1,19 @@
+<div>
+    <style>
+        @scope {
+            article {
+                background-color: aliceblue;
+            }
+            p {
+                background-color: rgb(198, 216, 255);
+                padding: 1em;
+                margin: 0;
+            }
+        }
+    </style>
+    <article>
+        <h4>Title: {{ item.data.title }}</h4>
+        <p>Content: {{ item.data.content}}</p>
+        <p>Author: {{ item.data.author }}</p>
+    </article>
+</div>

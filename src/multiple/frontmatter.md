@@ -32,7 +32,8 @@ items:
 ```
 {% endraw %}
 
-**Frontmatter**  
+**Frontmatter**
+```
 items:  
   - title: The intruder  
     content: Got inside the house  
@@ -43,3 +44,4 @@ items:
   - title: When the sun goes down  
     content: That's when the fun begins  
     author: Mickael Jackson
+```

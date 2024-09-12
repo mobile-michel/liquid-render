@@ -1,11 +1,14 @@
 ---
-title: Global variables
+title: Global JSON variables
 description: globals don’t need to be passed down, they are accessible from all files. One or more objects can be passed to a template.
-date: 2024-01-03
+date: 2024-01-07
 ---
+**output**
+{% render 'components/card', item: single-object %}
+
 **input**
 {% raw %}
-{% render 'components/card', item: one-card %}
+{% render 'components/card', item: single-object %}
 {% endraw %}
 
 **card.liquid**
@@ -19,5 +22,11 @@ date: 2024-01-03
 ```
 {% endraw %}
 
-**output**
-{% render 'components/card', item: one-card %}
+**single-object.json**
+```
+{
+    "title": "When the sun goes down",
+    "content": "That's when the fun begins",
+    "author": "Mickael Jackson"
+}
+```

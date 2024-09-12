@@ -1,7 +1,7 @@
 ---
-title: JSON data
+title: JSON variables
 description: a single object can be passed to a snippet by using the with...as syntax.
-date: 2024-01-03
+date: 2024-01-09
 ---
 **output**
 {% render 'components/card' with single-object as item %}

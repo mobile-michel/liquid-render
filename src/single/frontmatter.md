@@ -1,18 +1,18 @@
 ---
 title: Frontmatter datas
 description: An example with the render tag and some datas declared in the frontmatter of this file.
-date: 2024-01-02
+date: 2024-01-06
 items:
-  - title: Balls get inside
-    content: With a lot of pressure
-    author: Barbara Streisand
+  title: Balls get inside
+  content: With a lot of pressure
+  author: Barbara Streisand
 ---
 **output**
-{% render 'components/card' for items as item %}
+{% render 'components/card' with items as item %}
 
 **input**
 {% raw %}
-{% render 'components/card' for items as item %}
+{% render 'components/card' with items as item %}
 {% endraw %}
 
 **card.liquid**
@@ -26,8 +26,10 @@ items:
 ```
 {% endraw %}
 
-**Frontmatter**  
-items:
-  - title: Balls get inside  
-    content: With a lot of pressure  
-    author: Barbara Streisand
+**Frontmatter**
+```
+items:  
+  title: Balls get inside  
+  content: With a lot of pressure  
+  author: Barbara Streisand
+```
